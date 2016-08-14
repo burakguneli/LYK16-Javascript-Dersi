@@ -102,14 +102,26 @@ var sayi = 0;
 var yer = document.getElementById('number');
 var artma = document.getElementById('arttir');
 
-artma.onclick = function(){
-	sayi = sayi + 1;
-	yer.innerHTML = sayi;
-};
+// artma.onclick = function(){
+// 	sayi = sayi + 1;
+// 	yer.innerHTML = sayi;
+// };
+//
+// var azalma = document.getElementById('azalt');
+//
+// azalma.onclick = function(){
+// 	sayi = sayi - 1;
+// 	yer.innerHTML = sayi;
+// };                                    //Kolay yol ama kendini tekrar ediyor!
 
-var azalma = document.getElementById('azalt');
-
-azalma.onclick = function(){
-	sayi = sayi - 1;
+function handleClick(event){
+	if(event.target.id == 'arttir'){
+		sayi = sayi + 1;
+	} else {
+		sayi = sayi - 1;
+	}
 	yer.innerHTML = sayi;
-};
+}                                       //butun tiklamalari handle edip tek bir fonksiyonda calistiriyor.
+
+arttir.addEventListener('click', handleClick);
+azalt.addEventListener('click', handleClick);
