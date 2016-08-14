@@ -96,3 +96,20 @@
 
 // kutu.addEventListener('mouseover', mesaj); //mouse ustunde oldugunda calisir.
 // kutu.removeEventListener('mouseover', mesaj); //event listeneri bellekten tamamen siler.
+
+var sayi = 0;
+
+var yer = document.getElementById('number');
+var artma = document.getElementById('arttir');
+
+artma.onclick = function(){
+	sayi = sayi + 1;
+	yer.innerHTML = sayi;
+};
+
+var azalma = document.getElementById('azalt');
+
+azalma.onclick = function(){
+	sayi = sayi - 1;
+	yer.innerHTML = sayi;
+};

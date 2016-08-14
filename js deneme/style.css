@@ -5,3 +5,23 @@
 .info{
 	background-color: purple;
 }
+
+.box{
+	text-align: center;
+	margin-top:25% !important;
+	background-color: green;
+	width: 100px;
+	height: 100px;
+	margin: auto;
+}
+
+#number{
+	color: white;
+	padding-top: 10px;
+	font-family: Helvetica;
+	font-size: 20px;
+}
+
+body{
+	background-color: black;
+}
