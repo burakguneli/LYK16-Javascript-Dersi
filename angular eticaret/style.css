@@ -1,0 +1,63 @@
+body{
+  left: 0;
+  right: 0;
+  background-image: url("bg.jpg");
+  background-attachment: fixed;
+  font-family: Helvetica;
+}
+
+.clear{
+  clear: both;
+}
+
+.title{
+  font-weight: lighter;
+}
+
+.list{
+  float: left;
+}
+
+.list ul{
+  -webkit-padding-start: 0px !important;
+}
+
+.list ul li{
+  list-style-type: none;
+}
+
+.list ul li p{
+  float: left;
+  width: 220px;
+}
+
+.ekle{
+  padding: 5px;
+  margin-left: 10px;
+  margin-top: 12px;
+}
+
+.sepet{
+  float: left;
+  margin-left: 30%;
+}
+
+.sepet ul{
+  -webkit-padding-start: 0px !important;
+}
+
+.sepet ul li{
+  width: 220px;
+  list-style-type: none;
+}
+
+.sepet ul li p{
+  float: left;
+  width: 220px;
+}
+
+.sil{
+  padding: 5px;
+  margin-left: 10px;
+  margin-top: 12px;
+}

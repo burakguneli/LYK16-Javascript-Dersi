@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="main">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular</title>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body ng-controller="liste">
+
+    <div class="list">
+
+      <h1 class="title">URUNLER</h1>
+
+      <ul>
+        <li ng-repeat="urun in urunler">
+          <p><strong>Urun :</strong> {{urun.isim}}, <strong>Fiyat :</strong> {{urun.fiyat}}</p>
+          <button class="ekle" ng-click="sepeteEkle(urun)">Sepete Ekle</button>
+          <br><br><br>
+        </li>
+      </ul>
+
+    </div>
+
+    <div class="sepet">
+
+    <div class="clear"></div>
+
+    <div class="sepet">
+
+      <h1 class="title">SEPETIM</h1>
+
+      <ul>
+        <li ng-repeat="choosen in sepetim">
+          <p><strong>Urun :</strong> {{choosen.isim}}, <strong>Fiyat :</strong> {{choosen.fiyat}}</p>
+          <button class="sil" ng-click="sepettenSil(choosen)">Sepetten Cikar</button>
+        </li>
+      </ul>
+      <p id="total">
+        <strong>Toplam Fiyat : {{toplamFiyat()}}</strong>
+      </p>
+    </div>
+
+    </div>
+
+  <script type="text/javascript" src='app.js'>
+  </script>
+  </body>
+</html>

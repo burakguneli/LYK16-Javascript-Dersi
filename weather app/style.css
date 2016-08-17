@@ -1,0 +1,42 @@
+body{
+  left: 0;
+  right: 0;
+  background-image: url("cloud.jpg");
+  background-attachment: fixed;
+  font-family: Helvetica;
+}
+
+.clear{
+  clear: both;
+}
+
+.baslik{
+    font-weight: lighter;
+    text-align: center;
+    opacity: 0.5;
+    margin-top: 50px;
+}
+
+.select-box{
+  text-align: center;
+  margin-top: 80px;
+}
+
+.select-box p{
+  text-align: center;
+  opacity: 0.7;
+}
+
+.info{
+  margin-top: 100px;
+}
+
+.info p{
+  text-align: center;
+}
+
+.info span img{
+  text-align: center;
+  margin: auto;
+  display: block;
+}

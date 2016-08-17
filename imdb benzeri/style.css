@@ -1,0 +1,49 @@
+body{
+  background: url(bg.jpg) no-repeat center center fixed;
+	 -webkit-background-size: cover;
+	 -moz-background-size: cover;
+	 -o-background-size: cover;
+	 min-height: 100%;
+	 min-width: 1024px;
+	 width: 100%;
+	 height: auto;
+	 position: fixed;
+   margin: 0;
+   font-family: Helvetica;
+}
+
+.arama{
+  height: 26px;
+  width: 200px;
+  opacity: 0.5;
+  background-color: none;
+}
+
+.button{
+  border: 1px solid black;
+  margin-top: 20px;
+  margin-left: 10px;
+  padding: 5px;
+  color: black;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.search{
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.items{
+  list-style-type: none;
+}
+
+.items li{
+  margin-top: 20px;
+  opacity: 0.6;
+}
+
+.list{
+  margin-top: 70px;
+}
